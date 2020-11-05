@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD0F2C1D-CF4E-0B6D-DE32-1E49B0CCC951" name="category">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 16:13:04 UTC</createdTime>
+<generatorID>0A2C6033-CD55-FD62-D6B3-0E7D8629C041</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="category_id" id="16ADDEB9-B07E-DA6C-411E-726BE426604F">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 16:13:04 UTC</createdTime>
+<generatorID>B22CF640-42B2-2458-500D-6D250A701BA2</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category_name" id="A94A273F-CB26-0864-76CF-FA55C096D14C">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 16:13:04 UTC</createdTime>
+<generatorID>8F0C0292-BB3A-DC36-3F82-F3B35B89CA7B</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A9022C1-EC8A-9976-6CAC-48AEC63D14A8" name="category_PK">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 16:13:04 UTC</createdTime>
+<generatorID>7E8A5D90-682A-C7D6-DA12-C1E5863E5194</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16ADDEB9-B07E-DA6C-411E-726BE426604F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BF7AEA5-BE5D-FECE-19FA-B0AF2A0636AC" name="category_category_name_UK">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 16:13:04 UTC</createdTime>
+<generatorID>9981AFE5-8E6E-D723-42E5-047CF07A9FA1</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A94A273F-CB26-0864-76CF-FA55C096D14C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

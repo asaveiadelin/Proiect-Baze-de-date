@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="transactions_trans_elem_FK" directorySegmentName="seg_0" id="F505ED3A-6BB6-EECC-0EAD-5CD792030EBF">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:35:59 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<sourcePk>58D96F67-77B3-5A76-11D9-C28BC054F19D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>contin</nameOnSource>
+<nameOnTarget>fac parte din</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E7D0A197-1559-D6BF-A4EB-EE4747A0FD66</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E0F9DC13-11A4-370A-8AB9-CAE5B5823261</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

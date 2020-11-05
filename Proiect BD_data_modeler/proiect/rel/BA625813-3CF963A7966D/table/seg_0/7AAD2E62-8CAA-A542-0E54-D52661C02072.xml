@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7AAD2E62-8CAA-A542-0E54-D52661C02072" name="cart">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 16:13:04 UTC</createdTime>
+<generatorID>0C904699-72BF-466C-3CDA-81DC47BFD2E1</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_id" id="7B02E3DF-B183-D2EF-A989-1BB2206D4DAD">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 16:13:04 UTC</createdTime>
+<generatorID>A4711C03-DEA0-4141-6396-4347EF3CA65A</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAD401F9-4CB3-9ECD-5C8C-B7D5D024BD8A" referredColumn="C8059590-E790-73CF-F516-C4C6DC8E70E6"/>
+</associations>
+</Column>
+<Column name="user_id" id="D04EBEEB-E857-6B5A-C166-8A0539EB836C">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 16:13:04 UTC</createdTime>
+<generatorID>C89482AA-1BB3-9B16-C8F8-A76BF74EA5F9</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5AAEA135-50D9-A0D3-DF7D-ADED33F1D554" referredColumn="BE5F7150-D8A5-6BF1-EEB7-28F8ABF76D49"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6E06B1B-FEDA-CE27-5BCC-1A81AEEB3491" name="products_cart_FK">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 16:13:04 UTC</createdTime>
+<generatorID>4903C07E-B1B0-65E5-B10C-4F32A1229D65</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B02E3DF-B183-D2EF-A989-1BB2206D4DAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE4E1AE5-9CA3-5849-1313-F54509852433" name="users_cart_FK">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 16:13:04 UTC</createdTime>
+<generatorID>897CDCDF-DC24-0CB2-0501-E4EF549FC359</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D04EBEEB-E857-6B5A-C166-8A0539EB836C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

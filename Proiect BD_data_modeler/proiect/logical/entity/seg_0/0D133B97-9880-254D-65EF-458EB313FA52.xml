@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0D133B97-9880-254D-65EF-458EB313FA52" name="users">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:28:12 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user_id" id="33B2418B-2EA0-DC7C-8BB3-007693FCAAAC">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:28:16 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_name" id="2C581216-CB88-52A6-4560-DC91840D2282">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:53:19 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="EB580651-F470-BCC2-351C-3871EEACAD25">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:28:24 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<constraintName>users_email_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="email LIKE &apos;%@%.%&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pwd" id="824CFA2A-7E24-34B0-8DDA-08A975EF4214">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:28:35 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C569E615-0847-98F9-C90A-E97E81FE81DC" name="users PK">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:28:22 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>33B2418B-2EA0-DC7C-8BB3-007693FCAAAC</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="9FAF8899-D13C-C9AF-3D3F-1E21B14B496B" name="users_email_UK">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:42:15 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="false"/>
+</engineerTo>
+<newElementsIDs>EB580651-F470-BCC2-351C-3871EEACAD25</newElementsIDs>
+<usedAttributes>
+<attributeRef>EB580651-F470-BCC2-351C-3871EEACAD25</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="87D85E65-0FD9-26CD-317C-4E8A5C3B1425" name="users_user_name_UK">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:54:49 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<newElementsIDs>2C581216-CB88-52A6-4560-DC91840D2282</newElementsIDs>
+<usedAttributes>
+<attributeRef>2C581216-CB88-52A6-4560-DC91840D2282</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

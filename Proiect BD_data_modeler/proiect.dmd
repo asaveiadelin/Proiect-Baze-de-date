@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="proiect" id="78E87667-FC89-1FB0-A17F-1E1C36F446EE" version="3.5">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:24:37 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>78E87667-FC89-1FB0-A17F-1E1C36F446EE</designId>
+</OSDM_Design>

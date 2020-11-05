@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F857D600-63BE-FAF1-6837-6BB8B324A599" name="products">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:26:00 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="product_id" id="8A8FE6C2-D4BB-6A75-0453-4AE0A5AC3ED1">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:26:05 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="product_name" id="49D9CDAD-C6C0-8B4C-4E6A-16DF3927855A">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:26:19 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="product_price" id="DB970304-A4E5-FA51-CE01-D6984EB78BB8">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:26:33 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<constraintName>products_product_price_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="product_price&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="product_describe" id="65A2ECD8-8633-ADA7-CF82-24E5CD2BF0FE">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:26:52 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="product_image" id="C21B9FE6-1C0F-2C8B-0322-A467E41DF602">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:27:24 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="category_id" id="783DBD97-3F43-03E1-3F15-572633E16E04">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:32:11 UTC</createdTime>
+<generatorID>4AAA2D05-7CFF-DA83-B6E6-63DFE9117EC4</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<referedAttribute>B22CF640-42B2-2458-500D-6D250A701BA2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="92D34E1E-C5FE-ACA4-7913-26AF32085918" name="products PK">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:26:17 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8A8FE6C2-D4BB-6A75-0453-4AE0A5AC3ED1</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="C48BBADF-7C22-5EA3-0F2F-D19802B1E5CF" name="products_product_name_UK">
+<createdBy>Adelin-PC</createdBy>
+<createdTime>2019-05-26 15:37:03 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="BA625813-B49E-9C38-CEBC-3CF963A7966D" value="true"/>
+</engineerTo>
+<newElementsIDs>49D9CDAD-C6C0-8B4C-4E6A-16DF3927855A</newElementsIDs>
+<usedAttributes>
+<attributeRef>49D9CDAD-C6C0-8B4C-4E6A-16DF3927855A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
